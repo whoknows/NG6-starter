@@ -9,12 +9,14 @@
     "angular-aria": "^1.4.8",
     "angular-material": "^0.11.4",
     "angular-ui-router": "^0.2.15",
+    "file-loader": "^0.8.5",
     "font-awesome": "^4.5.0",
     "gulp": "^3.9.0",
     "karma": "^0.13.15",
     "karma-cli": "^0.1.1",
     "lodash": "^3.8.0",
     "normalize.css": "^3.0.3",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.9"
   },
   "devDependencies": {

@@ -1,4 +1,30 @@
-<!-- Place all UI elements intended to be present across all routes in this file -->
-<div class="app">
-    <div ui-view></div>
+<div class="layout-row app">
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+        <header class="nav-header">
+            Header
+        </header>
+        <md-content flex role="navigation">
+            <sidemenu></sidemenu>
+        </md-content>
+    </md-sidenav>
+
+    <div class="layout-column flex">
+        <md-toolbar class="md-whiteframe-glow-z1">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings" ng-click="vm.toggleSidenav()">
+                    <md-icon md-font-icon="fa fa-menu"></md-icon>
+                </md-button>
+                <h2>
+                    <span>Toolbar with Icon Buttons</span>
+                </h2>
+                <span flex></span>
+                <md-button class="md-icon-button" aria-label="More">
+                    <md-icon md-font-icon="fa fa-circle"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-content class="layout-padding flex" flex="">
+            <div ui-view></div>
+        </md-content>
+    </div>
 </div>
