@@ -2,7 +2,7 @@ import template from './sidemenu.html';
 import controller from './sidemenu.controller';
 import './sidemenu.styl';
 
-let sidemenuComponent = function ($mdSidenav) {
+let sidemenuComponent = function () {
     return {
         restrict: 'E',
         scope: {},

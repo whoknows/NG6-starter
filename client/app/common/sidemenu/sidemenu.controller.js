@@ -6,9 +6,6 @@ class SidemenuController {
             href: '/home'
         }];
     }
-    toggleSidenav() {
-        $mdSidenav('left').toggle();
-    }
 }
 
 export default SidemenuController;
