@@ -1,9 +1,10 @@
 class ToolbarController {
-    constructor() {
+    constructor($mdSidenav) {
         this.name = 'toolbar';
+        this.mdSidenav = $mdSidenav;
     }
     toggleSidenav() {
-        $mdSidenav('left').toggle();
+        this.mdSidenav('left').toggle();
     }
 }
 
